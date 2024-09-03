@@ -81,11 +81,11 @@ jobs:
     needs: [ create-windows-installer,  create-macos-installer]
     steps:
     - name: Download macOS zip
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: souffleur_macos.zip
     - name: Download Windows zip
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4.1.7
       with:
         name: souffleur_windows.zip
     - name: Create release
